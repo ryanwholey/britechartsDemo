@@ -11,7 +11,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'build'),
 		filename: 'bundle.js',
-		publicPath: '/assets/',
+		publicPath: '/assets/'
 	},
 	module: {
 		loaders: [
@@ -39,9 +39,9 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Britecharts Demo',
-			template: 'src/index.html',
+			favicon: 'favicon.ico',
 			filename: 'index.html',
-		}),
-	],
+			template: 'src/index.html',
+		})
+	]
 };
