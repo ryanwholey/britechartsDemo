@@ -2,3 +2,4 @@ node_modules
 npm-debug.log
 build
 src/_charts/
+**/.DS_Store
