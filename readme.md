@@ -17,9 +17,8 @@ Now fill in the missing parts of `src/js/app.js` to render a britechart at `loca
 ## Stuff To Do
 1. implement a bar chart using the 'categorical' endpoint
 2. implement a line chart using the 'timeSingleLine' endpoint
-3. transform bar chart data into donut chart data by looking at the data type from the docs on the britecharts site and transforming it [britecharts donut data](http://eventbrite.github.io/britecharts/global.html#DonutChartData__anchor)
-4. hit a csv endpoint like `netflix` and create a line chart using some of the parsing functions provided in the parseLib file
-5. hit your own json endpoint like `http://reddit.com/hot.json`, choose an interesting aspect of the data set, choose a chart, transform the data and display it!
+3. transform 'categorical' endpoint (bar chart data) into donut chart data by looking at the data type from the docs on the britecharts site and transforming it [britecharts donut data](http://eventbrite.github.io/britecharts/global.html#DonutChartData__anchor)
+4. hit your own json endpoint like `http://reddit.com/hot.json`, choose an interesting aspect of the data set, choose a chart, transform the data and display it!
 
 ## Cool APIs!
 * Stock api! pretty neat: 
