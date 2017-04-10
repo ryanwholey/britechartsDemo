@@ -1,4 +1,4 @@
-##Getting Started
+## Getting Started
 to compile and build, run the following:
 
 `npm install`
@@ -14,14 +14,14 @@ you will have to run two servers, a db server and a web server in different tabs
 
 Now fill in the missing parts of `src/js/app.js` to render a britechart at `localhost:8080`
 
-##Stuff To Do
+## Stuff To Do
 1. implement a bar chart using the 'categorical' endpoint
 2. implement a line chart using the 'timeSingleLine' endpoint
 3. transform bar chart data into donut chart data by looking at the data type from the docs on the britecharts site and transforming it [britecharts donut data](http://eventbrite.github.io/britecharts/global.html#DonutChartData__anchor)
 4. hit a csv endpoint like `netflix` and create a line chart using some of the parsing functions provided in the parseLib file
 5. hit your own json endpoint like `http://reddit.com/hot.json`, choose an interesting aspect of the data set, choose a chart, transform the data and display it!
 
-##Cool APIs!
+## Cool APIs!
 * Stock api! pretty neat: 
 [kibot.com/api/](http://www.kibot.com/api/historical_data_api_sdk.aspx)
 

@@ -2,3 +2,19 @@
     width: 100%;
     height: 300px;
 }
+
+html {
+	display: block !important;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;	
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	h1 {
+		font-weight: 300;	
+	}
+}

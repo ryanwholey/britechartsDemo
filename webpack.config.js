@@ -3,9 +3,8 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-
 	entry: [
-		'babel-polyfill', 
+		'babel-polyfill',
 		path.resolve(__dirname, 'src/index.js')
 	],
 	devtool: 'source-map',
@@ -28,11 +27,15 @@ module.exports = {
 			{
 				test: /\.s?css$/,
 				loaders:  ['style-loader', 'css-loader', 'sass-loader']
+			},
+			{
+				test: /\.ttf$/,
+				loader: 'file-loader?name=[name].[ext]'
 			}
-		]	
+		]
 	},
 	devServer: {
-		hot: true	
+		hot: true
 	},
 	plugins: [
 		new HtmlWebpackPlugin({

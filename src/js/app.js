@@ -2,7 +2,9 @@ import bar from '../_charts/bar'
 import line from '../_charts/line'
 import donut from '../_charts/donut'
 import sparkline from '../_charts/sparkline'
+// for bar chart
 import miniTooltip from '../_charts/mini-tooltip'
+// for line chart
 import tooltip from '../_charts/tooltip'
 
 import {
@@ -31,14 +33,8 @@ const d3Selection = require('d3-selection');
     const barChart = bar();
 
     barChart
-        .margin({
-            top: 20,
-            left: 80,
-            right: 10,
-            bottom: 50
-        })
         .width(offsetWidth)
-        .height(offsetHeight)
+        .height(500)
 
     if (container.node()) {
         container.datum(data).call(barChart);
