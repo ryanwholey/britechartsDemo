@@ -34,9 +34,6 @@ module.exports = {
 			}
 		]
 	},
-	devServer: {
-		hot: true
-	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			favicon: 'favicon.ico',

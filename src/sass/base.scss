@@ -1,0 +1,20 @@
+$TEXT_COLOR: #45494e;
+$FONT_STACK: 'Roboto', sans-serif;
+$FONT_WEIGHT: 200;
+
+html {
+	display: block !important;
+	font-family: $FONT_STACK;
+	font-weight: $FONT_WEIGHT;
+	color: $TEXT_COLOR;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	h1 {
+		font-weight: $FONT_WEIGHT;
+	}
+}

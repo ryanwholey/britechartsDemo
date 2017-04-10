@@ -1,7 +1,7 @@
 {
 	"name": "chartDemo",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Britecharts sandbox",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -12,12 +12,12 @@
 		"setup": "scripts/setupCharts.sh"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Ryan Wholey",
+	"repository": "https://github.com/ryanwholey/britechartsDemo.git",
 	"license": "ISC",
 	"dependencies": {
 		"britecharts": "^1.4.6",
-		"d3": "^4.7.4",
-		"request-promise": "^4.2.0"
+		"d3": "^4.7.4"
 	},
 	"devDependencies": {
 		"babel-core": "^6.24.1",

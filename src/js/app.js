@@ -33,7 +33,7 @@ const d3Selection = require('d3-selection');
     const barChart = bar();
 
     barChart
-        .width(offsetWidth)
+        .width(containerWidth)
         .height(500)
 
     if (container.node()) {
@@ -43,17 +43,14 @@ const d3Selection = require('d3-selection');
 export default async function main() {
 
     const container = d3Selection.select(BRITECHARTS_SELECTOR);
-    const {
-        offsetWidth,
-        offsetHeight
-    } = container.node();
+    const {offsetWidth: containerWidth} = container.node();
 
     // categorical, timeSingleLine, timeMultiLine, timeSparkline, facebook, netflix, ebay
     const url = getDataUrl(/*ENTER ENDPOINT HERE*/);
 
     let data = await fetchData(url);
     data = transformData(data);
-
+	
 
     // Add chart here!!!
 
