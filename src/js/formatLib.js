@@ -18,21 +18,19 @@ export const parseStock = (csv) => {
 };
 
 export const formatStock = (
-		stockDates,
-		name="Data Set",
+	stockDates,
+	name="Data Set",
 		id=1,
-		attr='close'
-	) => {
+			attr='close'
+) => ({
 
-	return {
-		topicName: name,
-		topic: id,
-		dates:  stockDates.map((stock) => ({
-			date: stock.date,
-			value: stock[attr]
-		}))
-	};
-};
+	topicName: name,
+	topic: id,
+	dates:  stockDates.map((stock) => ({
+		date: stock.date,
+		value: stock[attr]
+	}))
+});
 
 export const formatLineData = (data) => {
 	if (!Array.isArray(data)) {
@@ -40,8 +38,6 @@ export const formatLineData = (data) => {
 	}
 
 	return {
-		dataByTopic: [
-			...data
-		]
+		dataByTopic: data
 	};
 };
